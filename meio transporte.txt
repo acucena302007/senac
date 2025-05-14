@@ -1,0 +1,18 @@
+fun main() {
+    val meiosDeTransporte = listOf(
+        "Ônibus urbanos (Caxias Urbano)",
+        "Ônibus intermunicipais (Ozelame Transportes)",
+        "Ônibus rodoviários (Viação Ouro e Prata)",
+        "Táxis",
+        "Aplicativos de transporte (Uber, 99, etc.)",
+        "Carros particulares",
+        "Bicicletas",
+        "Motocicletas",
+        "Aeroporto de Caxias do Sul (CXJ/SBCX)"
+    )
+
+    println("🚍 Meios de Transporte em Caxias do Sul:")
+    meiosDeTransporte.forEachIndexed { index, transporte ->
+        println("${index + 1}. $transporte")
+    }
+}

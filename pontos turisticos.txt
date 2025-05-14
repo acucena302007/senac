@@ -1,0 +1,19 @@
+fun main() {
+    val pontosTuristicos = listOf(
+        "Catedral de Caxias do Sul",
+        "Capela do Santo Sepulcro",
+        "Museu Municipal de Caxias do Sul",
+        "Centro Cultural Moinho da Cascata",
+        "Monumento Jesus Terceiro Milênio",
+        "Parque Getúlio Vargas (Parque dos Macaquinhos)",
+        "Parque Lagoa do Rizzo",
+        "Palacete Eberle",
+        "Memorial Atelier Zambelli",
+        "Casa Sassi"
+    )
+
+    println("🏞️ Pontos Turísticos de Caxias do Sul:")
+    pontosTuristicos.forEachIndexed { index, ponto ->
+        println("${index + 1}. $ponto")
+    }
+}
