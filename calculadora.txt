@@ -1,0 +1,21 @@
+import kotlin.random.Random
+ 
+fun main() {
+    // Gerando dois números aleatórios entre 1 e 100
+    val num1 = Random.nextInt(1, 101)
+    val num2 = Random.nextInt(1, 101)
+ 
+    println("Números gerados: $num1 e $num2")
+ 
+    // Realizando as operações
+    val soma = num1 + num2
+    val subtracao = num1 - num2
+    val multiplicacao = num1 * num2
+    val divisao = if (num2 != 0) num1.toDouble() / num2 else "Divisão por zero não permitida"
+ 
+    // Exibindo os resultados
+    println("Resultado da soma: $soma")
+    println("Resultado da subtração: $subtracao")
+    println("Resultado da multiplicação: $multiplicacao")
+    println("Resultado da divisão: $divisao")
+}
