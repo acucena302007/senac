@@ -1,0 +1,22 @@
+import kotlin.random.Random
+
+fun main() {
+    // Gera dois números inteiros aleatórios entre 1 e 100
+    val numero1 = Random.nextInt(1, 101)
+    val numero2 = Random.nextInt(1, 101)
+
+    println("Número 1: $numero1")
+    println("Número 2: $numero2")
+
+    // Chama a função para comparar
+    compararValores(numero1, numero2)
+}
+
+// Função que compara dois valores inteiros e mostra qual é o maior
+fun compararValores(a: Int, b: Int) {
+    when {
+        a > b -> println("O maior valor é: $a")
+        b > a -> println("O maior valor é: $b")
+        else -> println("Os valores são iguais: $a e $b")
+    }
+}
