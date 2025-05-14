@@ -1,0 +1,19 @@
+fun main() {
+    val listaDeCompras = mutableListOf(
+        "Pão",
+        "Leite",
+        "Café",
+        "Manteiga",
+        "Queijo",
+        "Presunto",
+        "Banana",
+        "Maçã",
+        "Iogurte",
+        "Aveia",
+        "Suco de laranja"
+    )
+    println("🛒 Lista de Compras para o Café da Manhã:")
+    for ((index, item) in listaDeCompras.withIndex()) {
+        println("${index + 1}. $item")
+    }
+}
